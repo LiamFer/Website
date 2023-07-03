@@ -24,6 +24,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("show");
       if (entry.target.dataset.box == "experience-box") {
         increment(0, 20);
+        entry.target.dataset.box = "0";
       }
     }
     entry.target.unobserve();
