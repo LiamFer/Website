@@ -324,6 +324,7 @@ main {
   align-items: center;
   min-height: 100vh;
   padding: 30px 0px;
+  gap: 10px;
   background-color: var(--color1);
   color: var(--color5);
   font-family: "Montserrat", sans-serif;
@@ -353,6 +354,11 @@ main {
 #areas {
   margin: 15px;
   font-weight: 300;
+  text-decoration: underline 1px solid var(--color3);
+  text-underline-offset: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-thickness: 3px;
 }
 
 .job {
@@ -368,6 +374,12 @@ main {
   color: black;
   max-width: 20em;
   min-width: 230px;
+}
+
+.atuação h2 {
+  padding-bottom: 15px;
+  text-decoration: underline 2px solid var(--color3);
+  text-underline-offset: 5px;
 }
 
 .icones {
