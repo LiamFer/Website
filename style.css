@@ -224,7 +224,8 @@ main {
   font-weight: 400;
 }
 
-.welcome button {
+.welcome a {
+  text-decoration: none;
   background-color: transparent;
   backdrop-filter: blur(5px);
   color: var(--color5);
@@ -236,7 +237,7 @@ main {
   transition: all 0.1s;
 }
 
-.welcome button:hover {
+.welcome a:hover {
   background-color: var(--color3);
   border: 1px solid transparent;
 }
@@ -399,4 +400,71 @@ main {
 #contato:hover {
   background-color: var(--color5);
   color: var(--color2);
+}
+
+#container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  height: 100vh;
+  padding: 10px;
+  min-height: 800px;
+}
+
+#container-4 article {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 20px;
+  border: 1px solid var(--color3);
+  padding: 10px;
+}
+
+#localization iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+
+#localization,
+#contact {
+  /* 812px fit content */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact h1,
+#localization h1 {
+  text-transform: uppercase;
+  color: var(--color5);
+  text-decoration: underline 2px var(--color3);
+  text-underline-offset: 5px;
+}
+
+#contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+}
+
+#contact div h2 {
+  font-size: 1.2em;
+}
+
+#contact div p {
+  font-size: 0.9em;
+}
+
+#contact div span{
+font-weight: bold;
+}
+
+footer {
+  height: 300px;
+  background-color: var(--color1);
 }
